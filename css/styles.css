@@ -1,0 +1,302 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  background-color: #f5f5f5;
+  font-size: 1rem;
+}
+
+/* Banner promocional */
+.promo-banner {
+  background: linear-gradient(135deg, #8b0000 0%, #dc143c 50%, #ff0000 100%);
+  color: white;
+  text-align: center;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.03125rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-banner p {
+  margin: 0;
+}
+
+/* Navegación principal */
+.main-nav {
+  background: linear-gradient(135deg, #8b0000 0%, #a0001c 50%, #b91c3c 100%);
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-height: 4.375rem;
+}
+
+.nav-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  height: 4.375rem;
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  flex-shrink: 0;
+  min-width: fit-content;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03125rem;
+  transition: opacity 0.2s ease;
+}
+
+.logo a:hover {
+  opacity: 0.9;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+  flex: 1;
+  max-width: 31.25rem;
+  margin: 0 2.5rem;
+  width: 100%;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1.5625rem;
+  overflow: hidden;
+  transition: background-color 0.2s ease;
+  height: 2.5rem;
+}
+
+.search-input-wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input-wrapper:focus-within {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 0.125rem rgba(255, 255, 255, 0.3);
+}
+
+.search-button {
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: color 0.2s ease;
+  height: 100%;
+}
+
+.search-button:hover {
+  color: #f0f0f0;
+}
+
+.search-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.search-input {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem 0.75rem 0;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  height: 100%;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Acciones de navegación */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  min-width: fit-content;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-0.0625rem);
+}
+
+.nav-icon:active {
+  transform: translateY(0);
+}
+
+.user-icon,
+.cart-icon {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+/* Responsive Design */
+@media (max-width: 48rem) {
+  .nav-container {
+    padding: 0 1rem;
+    height: 3.75rem;
+  }
+
+  .main-nav {
+    min-height: 3.75rem;
+  }
+
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  .search-container {
+    margin: 0 1.25rem;
+    max-width: none;
+  }
+
+  .search-input {
+    font-size: 0.875rem;
+  }
+
+  .search-input-wrapper {
+    height: 2.25rem;
+  }
+
+  .nav-actions {
+    gap: 0.75rem;
+  }
+
+  .nav-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .promo-banner {
+    font-size: 0.75rem;
+    padding: 0.625rem 1rem;
+    min-height: 2.5rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .nav-container {
+    padding: 0 0.75rem;
+  }
+
+  .search-container {
+    margin: 0 1rem;
+  }
+
+  .logo a {
+    font-size: 1.125rem;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .nav-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .user-icon,
+  .cart-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .search-input-wrapper {
+    height: 2rem;
+  }
+
+  .search-button {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .search-input {
+    padding: 0.5rem 0.75rem 0.5rem 0;
+    font-size: 0.875rem;
+  }
+}
+
+/* Estados adicionales */
+@media (hover: hover) {
+  .search-input-wrapper:hover .search-button {
+    color: #ffffff;
+  }
+}
+
+/* Animaciones suaves */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Utilidades adicionales con unidades modernas */
+@media (min-width: 90rem) {
+  .nav-container {
+    max-width: 80rem;
+  }
+}
+
+@media (max-height: 40rem) {
+  .main-nav {
+    min-height: 3.5rem;
+  }
+
+  .nav-container {
+    height: 3.5rem;
+  }
+
+  .promo-banner {
+    min-height: 2.25rem;
+  }
+}
