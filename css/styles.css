@@ -719,6 +719,54 @@ body {
   animation: pulse 2s infinite;
 }
 
+/* Estilos Nosotros */
+.about-us {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.about-us-logo {
+  margin-bottom: 1.5rem;
+}
+
+.about-us-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-us-description {
+  font-size: 1rem;
+  color: #4a535c;
+  line-height: 1.6;
+}
+
+.about-us-description h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.about-us-description p {
+  margin-bottom: 1rem;
+}
+
+.about-us-values {
+  font-size: 1rem;
+  color: #4a535c;
+  line-height: 1.6;
+}
+
+.about-us-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-us-values li {
+  margin-bottom: 0.5rem;
+}
+
 /* Footer */
 .footer {
   background-color: #f8f9fa;
