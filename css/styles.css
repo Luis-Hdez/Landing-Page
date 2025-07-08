@@ -182,6 +182,18 @@ body {
   height: 1.375rem;
 }
 
+.nav-link.active {
+  color: #8b0000 !important;
+  text-decoration: underline !important;
+  font-weight: bold;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.nav-item .nav-link:hover {
+  text-decoration: underline;
+  color: #8b0000;
+}
+
 /* Responsive Design */
 @media (max-width: 48rem) {
   .nav-container {
