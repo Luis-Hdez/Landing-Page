@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Reset básico */
 * {
@@ -787,6 +787,9 @@ body {
 }
 
 .footer h5 {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -802,6 +805,9 @@ body {
 
 .footer ul li a {
   color: #4a535c;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -829,23 +835,21 @@ body {
   transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 
-/* Utilidades adicionales con unidades modernas */
-@media (min-width: 90rem) {
-  .nav-container {
-    max-width: 80rem;
-  }
+/* Video Loop */
+.videos-loops .container {
+  background-color: var(--text-secondary-color);
+  padding: 2rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-@media (max-height: 40rem) {
-  .main-nav {
-    min-height: 3.5rem;
-  }
+.videos-loops h4 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
-  .nav-container {
-    height: 3.5rem;
-  }
-
-  .promo-banner {
-    min-height: 2.25rem;
-  }
+.videos-loops .container .video-loop .video{
+  border-radius: 1.5rem;
 }
